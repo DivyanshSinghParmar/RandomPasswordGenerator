@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #83e4eb;
+    transition: background-color 2s ease-out, color 3s ease-out;
+    
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+body:not(:hover):not(:empty) {
+    background-color: black;
+    color: #fa55a2;
+    transition: background-color 2s ease-in , color 3s ease-in;
+    
+}
+
+container{
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+
+    
+}
+#leng{
+    width: 220px;
+}
+
+#head1{
+    
+    
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+#result{
+    
+    font-style: oblique;
+}
+
+
+#selections input[type="checkbox"] {
+    display: none; /* Hide the default checkboxes */
+}
+
+#selections label {
+    display: block;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#selections label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff; /* Background color */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#selections input:checked + label:before {
+    background-color: #4ca5af; /* Change background color when checked */
+    border-color: #e15bc4; /* Change border color when checked */
+}
+
+#selections label:after {
+    content: "\2713"; /* Checkmark character */
+    font-size: 16px;
+    color: #fff; /* Checkmark color */
+    position: absolute;
+    top: 0;
+    left: 5px;
+    visibility: hidden;
+    transition: visibility 0.3s;
+}
+
+#selections input:checked + label:after {
+    visibility: visible; /* Show checkmark when checked */
+}
+
+
+button{
+    
+    background-color: #62a6bd;
+    transition: background-color 2s ease-out;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #d66a33;
+    transition: background-color 2s ease-in;
+}
+
+
